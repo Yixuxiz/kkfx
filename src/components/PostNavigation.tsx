@@ -12,14 +12,14 @@ export default function PostNavigation({ allPosts, currentPostId }: PostNavigati
   const nextPost = currentIndex > 0 ? allPosts[currentIndex - 1] : null;
 
   return (
-    <div className="mt-12 pt-6 border-t border-gray-100 flex justify-between">
+    <div className="mt-12 pt-6 border-t border-[var(--border-color)] flex justify-between">
       {prevPost ? (
         <Link
           href={`/posts/${prevPost.id}`}
           className="group flex-1 mr-4"
         >
-          <div className="text-xs text-text-muted mb-1">← 上一篇</div>
-          <div className="text-sm text-text-secondary group-hover:text-text-primary transition-colors line-clamp-1">
+          <div className="text-xs text-[var(--text-muted)] mb-1">← 上一篇</div>
+          <div className="text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-color)] transition-colors line-clamp-1">
             {prevPost.title}
           </div>
         </Link>
@@ -32,8 +32,8 @@ export default function PostNavigation({ allPosts, currentPostId }: PostNavigati
           href={`/posts/${nextPost.id}`}
           className="group flex-1 ml-4 text-right"
         >
-          <div className="text-xs text-text-muted mb-1">下一篇 →</div>
-          <div className="text-sm text-text-secondary group-hover:text-text-primary transition-colors line-clamp-1">
+          <div className="text-xs text-[var(--text-muted)] mb-1">下一篇 →</div>
+          <div className="text-sm text-[var(--text-secondary)] group-hover:text-[var(--text-color)] transition-colors line-clamp-1">
             {nextPost.title}
           </div>
         </Link>

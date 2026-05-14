@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PostPageProps) {
 
 export default async function PostPage({ params }: PostPageProps) {
   const post: PostData = await getPostData(params.id);
-  const allPosts = getAllPostsSummary();
+  const allPosts = await getAllPostsSummary();
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
