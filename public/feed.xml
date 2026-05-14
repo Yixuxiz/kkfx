@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>K.K.</title>
+    <link>https://your-domain.com</link>
+    <description>K.K.的个人博客</description>
+    <atom:link href="https://your-domain.com/feed.xml" rel="self" type="application/rss+xml" />
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 14 May 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>欢迎来到 K.K. 的博客</title>
+      <link>https://your-domain.com/posts/welcome</link>
+      <description>这是我的第一篇博客文章。</description>
+      <pubDate>Wed, 14 May 2026 00:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
